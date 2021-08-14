@@ -1,0 +1,23 @@
+--- HTML
+
+
+<input id="uploadFile" class="f-input" placeholder="Uplaod group image">
+<div class="fileUpload btn btn--browse">
+    <span><img src="assets/img/up-lload-img.png" alt=""></span>
+    <input id="uploadBtn" type="file" class="upload">
+</div>
+
+---CSS
+
+Need to add fix wid on input file and opacity and positon:absulte
+
+
+
+--- Java
+
+<script>
+    document.getElementById("uploadBtn").onchange = function() {
+        document.getElementById("uploadFile").value = this.value.replace("C:\\fakepath\\", "");
+    };
+
+</script>
